@@ -28,13 +28,21 @@ var cfgFile string
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "ug-client",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
+	Short: "A command line interface for browsing ultimate-guitar.com",
+	Long: `ug-client is a command line interface for browsing ultimate-guitar.com.
 
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+Usage:
+
+        ug-client command [arguments]
+
+The commands are:
+
+        artist       show a list of artists
+        decade       search for tabs by decade
+        genre        browse tabs by genre
+        title        display a list of tabs based on a search query
+
+Use "ug-cli help [command]" for more information about a command.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	//	Run: func(cmd *cobra.Command, args []string) { },
